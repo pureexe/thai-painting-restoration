@@ -8,9 +8,9 @@
 #include "inpainter/toDoubleBand.h"
 #include "inpainter/MultiColorSplitBergman.h"
 
-string get(string name,string default_parameter="");
-double get_double(string name,string default_parameter="");
-double get_int(string name,string default_parameter="");
+string get(string name,string default_parameter);
+double get_double(string name,string default_parameter);
+double get_int(string name,string default_parameter);
 void help_message();
 bool restoration();
 
