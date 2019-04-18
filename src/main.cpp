@@ -62,15 +62,15 @@ string get(string name,string default_parameter="")
 
 double get_double(string name,string default_parameter="")
 {
-    cout << "GET DOUBLE" << endl;
-    try {
+    return stod(get(name,default_parameter));
+   /* try {
         return stod(get(name,default_parameter));
     }
     catch (...) {
         INVALID_INPUT = true;
         cout << name << " must be floating point"<< endl;
         return 0;
-    }
+    }*/
 }
 
 int get_int(string name,string default_parameter="")
