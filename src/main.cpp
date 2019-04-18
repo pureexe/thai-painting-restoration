@@ -23,8 +23,11 @@ int main(int argc, char **argv)
 {
     cout << "=== start === " << endl;
     DAMAGED_IMAGE = get("DAMAGED_IMAGE","");
+    cout << "DAMAGED_IMAGE: " << DAMAGED_IMAGE << endl;
     INPAINT_DOMAIN = get("INPAINT_DOMAIN","");
+    cout << "INPAINT_DOMAIN: " << INPAINT_DOMAIN << endl;
     OUTPUT_IMAGE = get("OUTPUT_IMAGE","output.png");
+    cout << "OUTPUT_IMAGE: " << OUTPUT_IMAGE << endl;
     TEST_DATA = get("LAMBDA","250");
     cout << "TEST_DATA: " << TEST_DATA << endl;
     LAMBDA = stod(TEST_DATA); 
