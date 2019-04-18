@@ -59,8 +59,7 @@ int main(int argc, char **argv)
 string get(string name,string default_parameter="")
 {
 	char* variable = getenv(name.c_str());
-    cout << "PHASE: " << variable << endl; 
-	if(strlen(variable)>0){
+	if(variable != NULL){
 		return variable;
 	}else{
 		return default_parameter;
