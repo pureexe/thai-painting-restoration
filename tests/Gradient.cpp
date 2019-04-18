@@ -6,7 +6,7 @@ using namespace cv;
 
 #include "equal.hpp"
 
-#include "../src/inpainter/Graident.h"
+#include "../src/inpainter/Gradient.h"
 
 int main()
 {
