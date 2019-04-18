@@ -9,9 +9,6 @@ add_executable( thai-painting-restoration src/main.cpp )
 target_link_libraries( thai-painting-restoration ${OpenCV_LIBS} )
 
 enable_testing()
-add_custom_target(build_test)
-
-add_executable(gradient tests/Gradient.cpp EXCLUDE_FROM_ALL)
+add_executable(test_gradient tests/Gradient.cpp)
 target_link_libraries(gradient ${OpenCV_LIBS} )
-add_dependencies(build_test gradient)
-add_test(Gradient gradient)
+add_test(Gradient test_gradient)
