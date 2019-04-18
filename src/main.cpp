@@ -31,6 +31,7 @@ int main(int argc, char **argv)
     COARSE_STEP = get_int("COARSE_STEP","10");
     MIDDLE_STEP = get_int("MIDDLE_STEP","3");
     FINEST_STEP = get_int("FINEST_STEP","10");
+    cout << "=== start === " << endl;
     if(DAMAGED_IMAGE.size() == 0 || INPAINT_DOMAIN.size() == 0){
         help_message();
         return 1;
