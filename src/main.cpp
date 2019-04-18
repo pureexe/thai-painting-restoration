@@ -59,6 +59,7 @@ int main(int argc, char **argv)
 string get(string name,string default_parameter="")
 {
 	char* variable = getenv(name.c_str());
+    cout << "PHASE: " << variable << endl; 
 	if(strlen(variable)>0){
 		return variable;
 	}else{
@@ -68,15 +69,14 @@ string get(string name,string default_parameter="")
 
 double get_double(string name,string default_parameter="")
 {
-    return stod(get(name,default_parameter));
-   /* try {
+    try {
         return stod(get(name,default_parameter));
     }
     catch (...) {
         INVALID_INPUT = true;
         cout << name << " must be floating point"<< endl;
         return 0;
-    }*/
+    }
 }
 
 int get_int(string name,string default_parameter="")
