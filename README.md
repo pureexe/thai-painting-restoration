@@ -25,5 +25,5 @@ There also have option avaliable for optimization the result
 
 ## Demonstrate
 
-- Algorithm explain with demonstration (Thai language) [bit.ly/demothai](https://bit.ly/demothai)
+- Algorithm explain with demonstration (Thai language) [bit.ly/demothai](https://bit.ly/demothai#forceEdit=true&offline=true&sandboxMode=true)
 - colab example [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pureexe/thai-painting-restoration/colab/inpaint.ipynb)
