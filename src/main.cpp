@@ -15,7 +15,7 @@ void help_message();
 bool restoration();
 
 bool INVALID_INPUT = false;
-string DAMAGED_IMAGE,INPAINT_DOMAIN,OUTPUT_IMAGE; 
+string DAMAGED_IMAGE,INPAINT_DOMAIN,OUTPUT_IMAGE,TEST_DATA; 
 int DEPTH,COARSE_STEP,MIDDLE_STEP,FINEST_STEP;
 double LAMBDA,EPSILON,THETA;
 
@@ -25,7 +25,9 @@ int main(int argc, char **argv)
     DAMAGED_IMAGE = get("DAMAGED_IMAGE","");
     INPAINT_DOMAIN = get("INPAINT_DOMAIN","");
     OUTPUT_IMAGE = get("OUTPUT_IMAGE","output.png");
-    LAMBDA = stod(get("LAMBDA","250"));
+    TEST_DATA = get("LAMBDA","250");
+    cout << "TEST_DATA: " << TEST_DATA << endl;
+    LAMBDA = stod(TEST_DATA); 
     //LAMBDA = get_double("LAMBDA","250");
     /*
     THETA = get_double("THETA","5");
