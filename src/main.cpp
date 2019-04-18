@@ -3,6 +3,16 @@
 * Author: Pakkapon Phongthawee (github.com/pureexe)
 * This is part of my final project at Silpakorn University
 **/
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    cout << "Hello world!" << endl;
+    return 0;
+}
+
+/*
 #include "header.h"
 
 #include "inpainter/toDoubleBand.h"
@@ -102,3 +112,4 @@ bool restoration()
     Mat result = MultiColorSplitBergman(image_input, inpaint_domain, LAMBDA, THETA, EPSILON, max_gaussseidel, COARSE_STEP, MIDDLE_STEP, FINEST_STEP, DEPTH, current_step);
     imwrite(OUTPUT_IMAGE,result.mul(255));
 }
+*/
