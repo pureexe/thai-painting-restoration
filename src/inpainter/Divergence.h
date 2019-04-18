@@ -1,3 +1,4 @@
+#pragma once
 Mat Divergence(Mat T, int depth = 1) {
 	double h = pow(2, depth - 1);
 	//data extraction part

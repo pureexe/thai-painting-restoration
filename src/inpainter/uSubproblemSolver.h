@@ -1,3 +1,5 @@
+#pragma once
+
 #include "uGaussKernel.h"
 #include "Divergence.h"
 Mat uSubproblemSolver(Mat u, Mat w, Mat original_image, Mat b, Mat lambda, double theta, int depth, int max_gauss_seidel) {

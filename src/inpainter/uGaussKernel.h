@@ -1,3 +1,5 @@
+#pragma once
+
 double uGaussKernel(double u, double z, double lambda, double theta, double divergence, double omega, int depth, double u_left, double u_right, double u_above, double u_under)
 {
 	double h = pow(2, depth - 1);

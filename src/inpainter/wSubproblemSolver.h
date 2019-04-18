@@ -1,3 +1,5 @@
+#pragma once
+
 #include "Signnum.h"
 
 //w = max(abs(gradU + b) - (1 / theta), 0) * signnum(gradU+b);

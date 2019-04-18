@@ -1,3 +1,4 @@
+#pragma once
 Mat Gradient(Mat u, double depth = 1) {
 	double h = pow(2, depth - 1);
 	int height = u.rows;
