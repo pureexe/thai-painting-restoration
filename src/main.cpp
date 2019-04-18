@@ -21,35 +21,21 @@ double LAMBDA,EPSILON,THETA;
 
 int main(int argc, char **argv)
 {
-    cout << "=== start === " << endl;
     DAMAGED_IMAGE = get("DAMAGED_IMAGE","");
-    cout << "DAMAGED_IMAGE: " << DAMAGED_IMAGE << endl;
     INPAINT_DOMAIN = get("INPAINT_DOMAIN","");
-    cout << "INPAINT_DOMAIN: " << INPAINT_DOMAIN << endl;
     OUTPUT_IMAGE = get("OUTPUT_IMAGE","output.png");
-    cout << "OUTPUT_IMAGE: " << OUTPUT_IMAGE << endl;
-    TEST_DATA = get("LAMBDA","250");
-    cout << "TEST_DATA: " << TEST_DATA << endl;
-    LAMBDA = stod(TEST_DATA); 
-    //LAMBDA = get_double("LAMBDA","250");
-    /*
+    LAMBDA = get_double("LAMBDA","250");
     THETA = get_double("THETA","5");
     DEPTH = get_int("DEPTH","4");
     EPSILON = get_double("EPSILON","0.0001");
     COARSE_STEP = get_int("COARSE_STEP","10");
     MIDDLE_STEP = get_int("MIDDLE_STEP","3");
-    FINEST_STEP = get_int("FINEST_STEP","10");
-    */
-    cout << LAMBDA << endl;
-    cout << "=== readed parameter === " << endl;
-    return 0;
-
+    FINEST_STEP = get_int("FINEST_STEP","10");    
     if(DAMAGED_IMAGE.size() == 0 || INPAINT_DOMAIN.size() == 0){
         help_message();
         return 1;
     }
     if(INVALID_INPUT){
-        cout << "== INVALID INPUT == " << endl; 
         return 2;   
     }
     restoration();   
