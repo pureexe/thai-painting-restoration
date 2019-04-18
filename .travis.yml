@@ -1,11 +1,13 @@
 language: cpp
 sudo: required
 compiler: gcc
-before_script:
-    - sudo apt-get update
-    - sudo apt-get install build-essential
-    - sudo apt-get install cmake
-    - sudo apt-get install libopencv-dev
+os: linux
+addons:
+apt:
+  packages:
+    - g++-7.2
+    - cmake
+    - libopencv-dev      
 
 script: 
   - cmake .
