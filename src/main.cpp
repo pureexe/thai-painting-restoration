@@ -36,7 +36,7 @@ int main(int argc, char **argv)
         return 1;
     }
     if(INVALID_INPUT){
-        return 2;
+        return 2;   
     }
     restoration();   
     return 0;
@@ -48,7 +48,7 @@ string get(string name,string default_parameter="")
 	if(strlen(variable)>0){
 		return variable;
 	}else{
-		return default_parameter
+		return default_parameter;
 	}
 }
 
