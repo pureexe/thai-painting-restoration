@@ -21,9 +21,7 @@ double LAMBDA,EPSILON,THETA;
 
 int main(int argc, char **argv)
 {
-    help_message();
-    return 0;
-
+    cout << "=== start === " << endl;
     DAMAGED_IMAGE = get("DAMAGED_IMAGE","");
     INPAINT_DOMAIN = get("INPAINT_DOMAIN","");
     OUTPUT_IMAGE = get("OUTPUT_IMAGE","output.png");
@@ -34,7 +32,9 @@ int main(int argc, char **argv)
     COARSE_STEP = get_int("COARSE_STEP","10");
     MIDDLE_STEP = get_int("MIDDLE_STEP","3");
     FINEST_STEP = get_int("FINEST_STEP","10");
-    cout << "=== start === " << endl;
+    cout << "=== readed parameter === " << endl;
+    return 0;
+
     if(DAMAGED_IMAGE.size() == 0 || INPAINT_DOMAIN.size() == 0){
         help_message();
         return 1;
