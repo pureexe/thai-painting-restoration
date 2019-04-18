@@ -36,7 +36,7 @@ int main(int argc, char **argv)
         return 1;
     }
     if(INVALID_INPUT){
-        return 2;0
+        return 2;
     }
     restoration();   
     return 0;
