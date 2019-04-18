@@ -25,7 +25,8 @@ int main(int argc, char **argv)
     DAMAGED_IMAGE = get("DAMAGED_IMAGE","");
     INPAINT_DOMAIN = get("INPAINT_DOMAIN","");
     OUTPUT_IMAGE = get("OUTPUT_IMAGE","output.png");
-    LAMBDA = get_double("LAMBDA","250");
+    LAMBDA = stod(get("LAMBDA","250"));
+    //LAMBDA = get_double("LAMBDA","250");
     /*
     THETA = get_double("THETA","5");
     DEPTH = get_int("DEPTH","4");
@@ -34,7 +35,7 @@ int main(int argc, char **argv)
     MIDDLE_STEP = get_int("MIDDLE_STEP","3");
     FINEST_STEP = get_int("FINEST_STEP","10");
     */
-    cout << DAMAGED_IMAGE << endl;
+    cout << LAMBDA << endl;
     cout << "=== readed parameter === " << endl;
     return 0;
 
