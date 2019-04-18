@@ -21,8 +21,8 @@ double LAMBDA,EPSILON,THETA;
 
 int main(int argc, char **argv)
 {
-    DAMAGED_IMAGE = get("DAMAGED_IMAGE");
-    INPAINT_DOMAIN = get("INPAINT_DOMAIN");
+    DAMAGED_IMAGE = get("DAMAGED_IMAGE","");
+    INPAINT_DOMAIN = get("INPAINT_DOMAIN","");
     OUTPUT_IMAGE = get("OUTPUT_IMAGE","output.png");
     LAMBDA = get_double("LAMBDA","250");
     THETA = get_double("THETA","5");
