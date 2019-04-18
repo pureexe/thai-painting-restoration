@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 {
     help_message();
     return 0;
-    
+
     DAMAGED_IMAGE = get("DAMAGED_IMAGE","");
     INPAINT_DOMAIN = get("INPAINT_DOMAIN","");
     OUTPUT_IMAGE = get("OUTPUT_IMAGE","output.png");
@@ -105,4 +105,3 @@ bool restoration()
     Mat result = MultiColorSplitBergman(image_input, inpaint_domain, LAMBDA, THETA, EPSILON, max_gaussseidel, COARSE_STEP, MIDDLE_STEP, FINEST_STEP, DEPTH, current_step);
     imwrite(OUTPUT_IMAGE,result.mul(255));
 }
-*/
