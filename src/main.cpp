@@ -23,10 +23,10 @@ int main(int argc, char **argv)
 {
     cout << "=== start === " << endl;
     DAMAGED_IMAGE = get("DAMAGED_IMAGE","");
-    /*
     INPAINT_DOMAIN = get("INPAINT_DOMAIN","");
     OUTPUT_IMAGE = get("OUTPUT_IMAGE","output.png");
     LAMBDA = get_double("LAMBDA","250");
+    /*
     THETA = get_double("THETA","5");
     DEPTH = get_int("DEPTH","4");
     EPSILON = get_double("EPSILON","0.0001");
@@ -43,6 +43,7 @@ int main(int argc, char **argv)
         return 1;
     }
     if(INVALID_INPUT){
+        cout << "== INVALID INPUT == " << endl; 
         return 2;   
     }
     restoration();   
