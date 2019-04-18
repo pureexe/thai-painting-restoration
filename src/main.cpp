@@ -12,6 +12,7 @@ string get(string name,string default_parameter="");
 double get_double(string name,string default_parameter="");
 double get_int(string name,string default_parameter="");
 void help_message();
+bool restoration();
 
 bool INVALID_INPUT = false;
 string DAMAGED_IMAGE,INPAINT_DOMAIN,OUTPUT_IMAGE; 
@@ -35,9 +36,9 @@ int main(int argc, char **argv)
         return 1;
     }
     if(INVALID_INPUT){
-        return 2;
+        return 2;0
     }
-    inpaint();   
+    restoration();   
     return 0;
 }
 
@@ -91,7 +92,7 @@ void help_message(){
     cout << "- FINEST_STEP: maximum iteration on finest level resolution of image pyramid (default: 10)" << endl;
     cout << "more info: github.com/pureexe/thai-painting-restoration";
 }
-bool inpaint()
+bool restoration()
 {
     Mat image_input = toDoubleBand(imread(DAMAGED_IMAGE));
     Mat inpaint_domain = imread(INPAINT_DOMAIN,CV_LOAD_IMAGE_GRAYSCALE);
