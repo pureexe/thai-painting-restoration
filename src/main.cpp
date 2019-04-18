@@ -62,6 +62,7 @@ string get(string name,string default_parameter="")
 
 double get_double(string name,string default_parameter="")
 {
+    cout << "GET DOUBLE" << endl;
     try {
         return stod(get(name,default_parameter));
     }
