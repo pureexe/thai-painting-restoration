@@ -1,4 +1,5 @@
 #pragma once
+
 #include "MergeColorResult.h"
 #include "SplitBergmanColorInpaint.h"
 

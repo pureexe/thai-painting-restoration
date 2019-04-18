@@ -77,7 +77,7 @@ int get_int(string name,string default_parameter="")
 }
 
 void help_message(){
-    cout << "Thai painting restorationg" << endl;
+    cout << "Thai painting restoration" << endl;
     cout << "usage: \'DAMAGED_IMAGE=\"input.png\" INPAINT_DOMAIN=\"domain.png\" ./thai-painting-restoration" << endl;
     cout << "avaliable option:" << endl; 
     cout << "- DAMAGED_IMAGE: path of image to restoration (required)" << endl;

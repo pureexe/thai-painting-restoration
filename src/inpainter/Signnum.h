@@ -1,4 +1,5 @@
 #pragma once
+
 Mat Signnum(Mat src) {
 	Mat z = Mat::zeros(src.size(), src.type());
 	Mat a = (z < src) & 1;

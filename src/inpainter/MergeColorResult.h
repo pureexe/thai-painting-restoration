@@ -1,4 +1,5 @@
 #pragma once
+
 Mat MergeColorResult(Mat original_image, Mat inpainted_domain, Mat upscale_result)
 {
 	int i, j;

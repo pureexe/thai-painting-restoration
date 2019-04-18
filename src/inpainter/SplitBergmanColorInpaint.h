@@ -1,5 +1,7 @@
 #pragma once
+
 #include "SplitBergmanInpaint.h"
+
 Mat SplitBergmanColorInpaint(Mat toinpaint_image, Mat inpaint_domain, double lambda, double theta, double tolerant, int max_gauss_seidel, int max_iteration, int depth = 1)
 {
 	int i;

@@ -1,5 +1,7 @@
 #pragma once
+
 #include "toDoubleBand.h"
+
 Mat CreateLambdaMatrix(Mat inpaint_domain,double lambda)
 {
 	Mat inpainted_lambda = (inpaint_domain == 0);
