@@ -7,7 +7,6 @@
 
 #include "inpainter/toDoubleBand.h"
 #include "inpainter/MultiColorSplitBergman.h"
-#include "inpainter/toSingleChannel.h"
 
 string get(string name,string default_parameter="");
 double get_double(string name,string default_parameter="");
@@ -95,7 +94,7 @@ void help_message(){
 bool inpaint()
 {
     Mat image_input = toDoubleBand(imread(DAMAGED_IMAGE));
-    Mat inpaint_domain = toDoubleBand(toSingleChannel(imread(INPAINT_DOMAIN)));
+    Mat inpaint_domain = imread(INPAINT_DOMAIN,CV_LOAD_IMAGE_GRAYSCALE);
     int max_gaussseidel = 1;
     int current_step = 1;
     Mat result = MultiColorSplitBergman(image_input, inpaint_domain, LAMBDA, THETA, EPSILON, max_gaussseidel, COARSE_STEP, MIDDLE_STEP, FINEST_STEP, DEPTH, current_step);
