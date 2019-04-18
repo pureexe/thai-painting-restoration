@@ -4,7 +4,7 @@ using namespace std;
 #include <opencv2/core.hpp>
 using namespace cv;
 
-#include "eqaul.hpp"
+#include "equal.hpp"
 
 #include "../src/inpainter/Graident.h"
 
