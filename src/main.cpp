@@ -23,6 +23,7 @@ int main(int argc, char **argv)
 {
     cout << "=== start === " << endl;
     DAMAGED_IMAGE = get("DAMAGED_IMAGE","");
+    /*
     INPAINT_DOMAIN = get("INPAINT_DOMAIN","");
     OUTPUT_IMAGE = get("OUTPUT_IMAGE","output.png");
     LAMBDA = get_double("LAMBDA","250");
@@ -32,6 +33,8 @@ int main(int argc, char **argv)
     COARSE_STEP = get_int("COARSE_STEP","10");
     MIDDLE_STEP = get_int("MIDDLE_STEP","3");
     FINEST_STEP = get_int("FINEST_STEP","10");
+    */
+    cout << DAMAGED_IMAGE << endl;
     cout << "=== readed parameter === " << endl;
     return 0;
 
