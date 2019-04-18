@@ -1,7 +1,9 @@
 # thai-painting-restoration
-Thai painting restoration implement in c++ with opencv. This repository is a part of research project in undergraduate degree Silpakorn University.
+Thai painting restoration implement in c++ with opencv.
 
-This repository only support for run on linux (especially [Google Colab](https://colab.research.google.com))
+This repository is a part of research project in undergraduate degree Silpakorn University.
+
+However, This repository only support for run on linux (especially [Google Colab](https://colab.research.google.com))
 
 ## Usage
 
