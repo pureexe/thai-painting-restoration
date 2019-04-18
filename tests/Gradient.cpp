@@ -14,7 +14,10 @@ int main()
     Mat expected_01_01 =  (Mat_<double>(6,3) << -1, 6, -1, 0, 0, 0 , 1 , -6, 1, -1, 0, 1, 6, 0, -6, -1, 0, 1);
     bool TEST_PASS = true;
     TEST_PASS = TEST_PASS && equal(Gradient(origial_01),expected_01_01);
+    cout << origial_01 << endl;
+    cout << "====" << endl;
     cout << Gradient(origial_01)  << endl;
+    cout << "====" << endl;
     cout << expected_01_01 << endl;
     if(TEST_PASS){
         return 0;
